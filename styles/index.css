@@ -7,6 +7,26 @@
   font-weight: 900;
 }
 
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fs-15 {
+  font-size: 18px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -30,7 +50,12 @@
 }
 
 .btn.white {
+  color: black;
   background-color: white;
+}
+
+.primary {
+  color: #02250A;
 }
 
 body {
@@ -48,16 +73,26 @@ body {
 }
 
 .hero header .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: white;
   width: 50%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero header .nav .logo {
@@ -70,9 +105,12 @@ body {
 
 .hero header .nav-list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .hero header .nav-list .nav-item {
@@ -92,14 +130,22 @@ body {
 }
 
 .hero .banner_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 700px;
 }
 
 .hero .banner_inner .left {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .banner_inner .left_wrapper {
@@ -126,9 +172,15 @@ body {
 
 .hero .banner_inner .right {
   background: #02250A;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .banner_inner .right_wrapper {
@@ -153,3 +205,171 @@ body {
   bottom: 0;
   right: 134px;
 }
+
+.banner_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner_two_left, .banner_two_right {
+  width: 552px;
+  height: 635px;
+  margin-left: 120px;
+  background: white;
+}
+
+.banner_two_right {
+  background-color: white;
+  padding: 30px;
+  margin-left: 100px;
+}
+
+.banner_two_right .banner_two_heading {
+  width: 641px;
+  height: 116px;
+  margin-bottom: 50px;
+}
+
+.banner_two_right .banner_two_heading h2 {
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 58.09px;
+}
+
+.banner_two_right .banner_two_paragraph {
+  width: 572px;
+  height: 199px;
+  margin-bottom: 50px;
+}
+
+.banner_two_right .banner_two_paragraph p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.recent_reports {
+  background-color: #02250A;
+  padding: 10px;
+}
+
+.recent_reports .report_heading {
+  width: 500px;
+  height: 108px;
+}
+
+.recent_reports .report_heading h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58.09px;
+  color: white;
+  padding: 5px;
+  position: relative;
+}
+
+.recent_reports .report_heading h2::after {
+  content: "";
+  width: 110px;
+  height: 8px;
+  background-color: white;
+  position: absolute;
+  margin-left: 8px;
+  bottom: 0;
+  left: 0;
+}
+
+.recent_reports_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #02250A;
+}
+
+.recent_reports_container .recent_reports_one, .recent_reports_container .recent_reports_two, .recent_reports_container .recent_reports_three, .recent_reports_container .recent_reports_four {
+  width: 300px;
+  height: 500px;
+  margin: 0;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.recent_reports_container .recent_reports_one .report_image, .recent_reports_container .recent_reports_two .report_image, .recent_reports_container .recent_reports_three .report_image, .recent_reports_container .recent_reports_four .report_image {
+  width: 276px;
+  height: 207px;
+  margin: 10px auto;
+  border-radius: 8px;
+  background-color: red;
+}
+
+.recent_reports_container .recent_reports_one .report_content_wrapper, .recent_reports_container .recent_reports_two .report_content_wrapper, .recent_reports_container .recent_reports_three .report_content_wrapper, .recent_reports_container .recent_reports_four .report_content_wrapper {
+  padding: 0 15px;
+}
+
+.recent_reports_container .recent_reports_one .report_content_wrapper .report_content, .recent_reports_container .recent_reports_two .report_content_wrapper .report_content, .recent_reports_container .recent_reports_three .report_content_wrapper .report_content, .recent_reports_container .recent_reports_four .report_content_wrapper .report_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recent_reports_container .recent_reports_one .report_content_wrapper .report_content time, .recent_reports_container .recent_reports_two .report_content_wrapper .report_content time, .recent_reports_container .recent_reports_three .report_content_wrapper .report_content time, .recent_reports_container .recent_reports_four .report_content_wrapper .report_content time {
+  color: #d8c8c8;
+  font-size: 14px;
+}
+
+.recent_reports .see_more {
+  margin: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.incidents .incidents_heading {
+  width: 705px;
+  height: 116px;
+  font-weight: 700;
+  font-size: 32px;
+  margin-left: 50px;
+  line-height: 58.09px;
+  padding: 70px 100px;
+}
+
+.incidents .incident_images {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-left: 150px;
+}
+
+.incidents .incident_images img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.incidents .incident_images .images {
+  width: 317px;
+  height: 257px;
+  background-color: rebeccapurple;
+}
+
+footer {
+  color: white;
+  background-color: #02250A;
+  text-align: center;
+  padding: 15px;
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=index.css.map */
